@@ -31,7 +31,7 @@ interface VoitureDao {
     fun getVoiture(): List<Voiture>
 
     @Update
-    fun updateVoiture(smartphone: Voiture)
+    fun updateVoiture(voiture: Voiture)
 
     @Query("DELETE FROM voiture_table WHERE id = :id")
     fun deleteVoitureById(id: Int)
